@@ -11,7 +11,6 @@
 // let num = [11,12,13,14,15,16];
 // console.log(num[num.length-1]);
 
-
 // ### 2. Concat doir misollar
 // 1-misol
 // let num1 = [1,2,3,4,5];
@@ -25,7 +24,6 @@
 // let res = text1.concat(text2, text3)
 // console.log(res);
 
-
 // 3-misol
 // let num1 = [1, 2, 3, 4, 5];
 // let num2 = [6, 7, 8]
@@ -33,8 +31,7 @@
 // let natija = num1.concat(num2, res)
 // console.log(natija);
 
-
-// ### 3. Includes doir misollar 
+// ### 3. Includes doir misollar
 // 1-misol
 // let number = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 // let elementToFind = 15;
@@ -62,7 +59,6 @@
 // } else {
 //     console.log("Massiv ichida 10 dan katta son mavjud emas");
 // }
-
 
 // ### 4. IndexOf, LastIndexOf doir misollar
 // 1-misol
@@ -103,7 +99,6 @@
 // num.sort((a, b) => b - a)
 // console.log(num);
 
-
 // ### 6. Reverse
 // 1-misol
 // let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -120,7 +115,6 @@
 // let res = numbers.reverse()
 // console.log(res);
 
-
 // ### 7. ToString doir misollar
 // 1-misol
 // let num = [20, 30, 40, 50, 55];
@@ -136,7 +130,6 @@
 // let num = [10, 20, 30, 40, 90]
 // let res = num.toString(", ")
 // console.log(res);
-
 
 // ### 8. Join doir misollar
 // 1-misol
@@ -171,13 +164,11 @@
 // text.shift();
 // console.log(text);
 
-
 // ### 10. Unshift, Pop
 // 1-misol
 // let cars = ["BMW", "Merc", "Tesla"];
 // cars.unshift("Onix");
 // console.log(cars);
-
 
 // 2-misol
 // let number = [20,30,40,50];
@@ -192,11 +183,98 @@
 // console.log("O'chirilgan oxirgi element", lastFruit);
 // console.log("Oxirgi element o'chirilgandan keyin", fruits);
 
-
-
 // ### Qiyinroq masalalar:
 // 1-misol
-let num = [1, 20, 93, 82, 78, 12, 29];
-if (num.length % 2 == 1) {
-    console.log("toq");
-}
+// let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// let length = number.length;
+// if (length % 2 == 1) {
+//     const middleIndex = Math.floor(length / 2);
+//     number.splice(middleIndex, 1);
+//     console.log(number);
+// } else {
+//     let mid = length / 2;
+//     let firstHalf = number.slice(0, mid);
+//     let secondHalf = number.slice(mid);
+//     console.log(firstHalf, secondHalf);
+// }
+
+// 3-misol
+// let num = [1, 23, 2, 5, 6, 7, 8, 10];
+// let searchElement = 10;
+// let res = num.indexOf(searchElement)
+
+// if (res !== -1) {
+//     num.splice(res, 1);
+//     console.log("Elementt olib tashlandi:", num);
+// } else {
+//     num.push(searchElement);
+//     console.log("Element qoshildi", num);
+// }
+
+// 4-misol
+// let number = [89, 98, 12, 64, 87, 723, 8764, 887, 8];
+
+// let searchElement = 98;
+// let firstIndex = number.indexOf(searchElement);
+// let lastIndex = number.lastIndexOf(searchElement)
+
+// if (firstIndex !== -1 && lastIndex !== -1) {
+//     let newNum = number.slice(firstIndex, lastIndex + 1)
+//     console.log("Yangi massiv", newNum);
+// } else {
+//     console.log("Elment topilmadi");
+// }
+
+// 6-misol
+// let num = [1, 2, 3, 4, 5];
+// let doubledArray = [];
+// for (let i = 0; i < num.length; i++) {
+//     doubledArray[i] = num[i] * 2;
+// }
+
+// let res = doubledArray.join(", ")
+// console.log(res);
+
+// 7-misol
+// let array1 = ['a', 'b', 'c']
+// let array2 = ['d', 'e', 'f']
+// let array3 = ['g', 'h', 'j']
+// let combineArray = array1.concat(array2, array3);
+// let res = combineArray.join("-");
+
+// res = res.toUpperCase()
+// console.log(res);
+
+
+// 8-misol
+// let text = ['a', 'b', 'c', 'd', 'e'];
+
+// text.splice(0, 1);
+// text.splice(text.length - 1, 1);
+
+// let result = text.join(":");
+
+// console.log(result);
+
+// 9-misol
+// let num = [5, 6, 7, 8, 9];
+// num.unshift(4);
+// num.push(10);
+// num.sort(function (a, b) {
+//     return a - b;
+// })
+
+// let lastThreeElements = num.slice(-3);
+// console.log(lastThreeElements);
+
+// 10-misol
+// let numbers = [5, 3, 8, 1, 9, 2, 6];
+// numbers.reverse()
+// numbers.slice(0, 2);
+// numbers.slice(numbers.length - 3, 3);
+
+// numbers.sort(function (a, b) {
+//     return a - b;
+// })
+// console.log(numbers);
